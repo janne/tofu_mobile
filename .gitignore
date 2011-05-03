@@ -5,3 +5,4 @@
 build
 www/phonegap.js
 Tofu.xcodeproj/project.xcworkspace/*
+Tofu.xcodeproj/xcuserdata/*
