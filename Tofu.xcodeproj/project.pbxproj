@@ -34,6 +34,7 @@
 		307D28A2123043360040C0FA /* PhoneGapBuildSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 307D28A1123043350040C0FA /* PhoneGapBuildSettings.xcconfig */; };
 		30E1352710E2C1420031B30D /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* PhoneGap.plist */; };
 		FB11853413704B5B00B10E4F /* application.css in Resources */ = {isa = PBXBuildFile; fileRef = FB11853313704B5B00B10E4F /* application.css */; };
+		FB11853A1370517900B10E4F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB1185391370517900B10E4F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		32CA4F630368D1EE00C91783 /* Tofu_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tofu_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Tofu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tofu-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		FB11853313704B5B00B10E4F /* application.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = application.css; path = www/application.css; sourceTree = "<group>"; };
+		FB1185391370517900B10E4F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				FB1185391370517900B10E4F /* README.md */,
 				FB11853313704B5B00B10E4F /* application.css */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* PhoneGapLib.xcodeproj */,
@@ -301,6 +304,7 @@
 				3009C2B2127B897D007F4BC6 /* Default-Landscape.png in Resources */,
 				3009C2B3127B897D007F4BC6 /* Default-Portrait.png in Resources */,
 				FB11853413704B5B00B10E4F /* application.css in Resources */,
+				FB11853A1370517900B10E4F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
