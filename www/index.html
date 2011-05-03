@@ -13,19 +13,33 @@
   <div data-role="page" id="home"> 
     <div data-role="header">
       <h1>Tofu</h1> 
+      <a href="#add-item" data-icon="plus" class="ui-btn-right">Add</a>
     </div> 
     <div data-role="content">
-      <ul data-role="listview" id="list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
+      <ul data-role="listview" id="list" data-filter="true">
+        <li><a href="#edit-item">Item 1</a></li>
+        <li><a href="#edit-item">Item 2</a></li>
+        <li><a href="#edit-item">Item 3</a></li>
+        <li><a href="#edit-item">Item 4</a></li>
+        <li><a href="#edit-item">Item 5</a></li>
       </ul>
     </div>            
   </div>
+      
+  <div data-role="page" id="edit-item"> 
+    <div data-role="header">
+      <h1>Edit item</h1> 
+    </div>
+    <div data-role="content">
+    </div>
+  </div>
 
-  <div data-role="page" id="add"> 
+  <div data-role="page" id="add-item"> 
+      <div data-role="header">
+          <h1>New item</h1> 
+      </div>
+      <div data-role="content">
+      </div>
   </div>
       
   <script src="phonegap.0.9.5.min.js"></script>
