@@ -24,10 +24,19 @@ jQuery(function() {
   tofu.updateList();
 });
 
-
 jQuery(function() {
+  // Edit item
+  $('div#edit-item form').submit(function() {
+    tofu.items.splice(tofu.item, 1);
+    tofu.item = undefined;
+    history.back();
+    return false;
+  });
+  
   $('div#edit-item').live('pagebeforehide', function(event, ui) {
-    tofu.items[tofu.item] = $('#edit-item-text').val();
+    if(tofu.item !== undefined) {
+      tofu.items[tofu.item] = $('#edit-item-text').val();
+    }
   });
   $('div#edit-item').live('pagebeforeshow', function(event, ui) {
     $('#edit-item-text').val(tofu.items[tofu.item]);
