@@ -164,10 +164,6 @@ dropbox.setup = function() {
 	}
 };
 
-
-//Run setup when everything's loaded
-window.onload = dropbox.setup;
-
 //Function to send oauth requests
 dropbox.oauthReqeust = function(param1,param2,callback) {
 	//If the token wasn't defined in the function call, then use the access token
