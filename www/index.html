@@ -61,7 +61,14 @@
   <script src="jquery-1.6.min.js"></script> 
   <script src="jquery.mobile-1.0a4.1.min.js"></script>      
   <script src="phonegap.0.9.5.min.js"></script>
+  <script src="tofu.js"></script>
   <script>
+      jQuery(function() {
+        // Setup Tofu
+        var tofu = new Tofu();
+        tofu.items();
+      });
+
       window.addEventListener('deviceready', function () {
         // add your PhoneGap-dependent functionality here!
       });
