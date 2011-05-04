@@ -14,14 +14,7 @@
       <a href="#setup" data-icon="gear" class="ui-btn-left">Setup</a>
       <a href="#add-item" data-icon="plus" class="ui-btn-right">Add</a>
     </div> 
-    <div data-role="content">
-      <ul data-role="listview" id="list" data-filter="true">
-        <li><a href="#edit-item">Item 1</a></li>
-        <li><a href="#edit-item">Item 2</a></li>
-        <li><a href="#edit-item">Item 3</a></li>
-        <li><a href="#edit-item">Item 4</a></li>
-        <li><a href="#edit-item">Item 5</a></li>
-      </ul>
+    <div data-role="content" class="content">
     </div>            
   </div>
 
@@ -41,7 +34,7 @@
     </div>
     <div data-role="content">
         <form>
-            <input type="text" name="text" value="Item 1" />
+            <input type="text" name="text" id="edit-item-text" />
             <input type="submit" value="Complete" data-theme="b" />
         </form>
     </div>
@@ -54,6 +47,7 @@
       <div data-role="content">
           <form>
               <input type="text" name="text" />
+              <input type="submit" value="Append" data-theme="b" />
           </form>
       </div>
   </div>
@@ -62,16 +56,5 @@
   <script src="jquery.mobile-1.0a4.1.min.js"></script>      
   <script src="phonegap.0.9.5.min.js"></script>
   <script src="tofu.js"></script>
-  <script>
-      jQuery(function() {
-        // Setup Tofu
-        var tofu = new Tofu();
-        tofu.items();
-      });
-
-      window.addEventListener('deviceready', function () {
-        // add your PhoneGap-dependent functionality here!
-      });
-  </script>
   </body>
 </html>
