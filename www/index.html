@@ -3,57 +3,62 @@
   <head>
     <title>PhoneGap!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-    <link rel="stylesheet" href="application.css" /> 
+    <link rel="stylesheet" href="application.css" />
     <link rel="stylesheet" href="jquery.mobile-1.0a4.1.min.css" />
   </head>
   <body>
 
-  <div data-role="page" id="home"> 
+  <!-- Home -->
+  <div data-role="page" id="home">
     <div data-role="header">
-      <h1>Tofu</h1> 
+      <h1>Tofu</h1>
       <a href="#setup" data-icon="gear" class="ui-btn-left">Setup</a>
       <a href="#add-item" data-icon="plus" class="ui-btn-right">Add</a>
-    </div> 
+    </div>
     <div data-role="content" class="content">
-    </div>            
+    </div>
   </div>
 
-  <div data-role="page" id="setup"> 
+  <!-- Setup -->
+  <div data-role="page" id="setup">
       <div data-role="header">
-          <h1>Setup</h1> 
+          <h1>Setup</h1>
       </div>
       <div data-role="content">
           <form>
           </form>
       </div>
-  </div>    
+  </div>
 
-  <div data-role="page" id="edit-item"> 
+  <!-- Edit item -->
+  <div data-role="page" id="edit-item">
     <div data-role="header">
-      <h1>Edit item</h1> 
+      <h1>Edit item</h1>
     </div>
     <div data-role="content">
         <form>
             <input type="text" name="text" id="edit-item-text" />
-            <input type="submit" value="Complete" data-theme="b" />
+            <input type="submit" value="Complete" />
         </form>
     </div>
   </div>
 
-  <div data-role="page" id="add-item"> 
+  <!-- Add item -->
+  <div data-role="page" id="add-item">
       <div data-role="header">
-          <h1>New item</h1> 
+          <h1>New item</h1>
       </div>
       <div data-role="content">
           <form>
               <input type="text" name="text" />
-              <input type="submit" value="Append" data-theme="b" />
+              <input type="submit" value="Append" />
           </form>
       </div>
   </div>
-      
-  <script src="jquery-1.6.min.js"></script> 
-  <script src="jquery.mobile-1.0a4.1.min.js"></script>      
+
+  <!-- Javascripts -->
+  <script src="jquery-1.6.min.js"></script>
+  <script src="jquery.mobile-1.0a4.1.min.js"></script>
   <script src="phonegap.0.9.5.min.js"></script>
   <script src="tofu.js"></script>
   </body>
