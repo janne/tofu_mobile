@@ -26,10 +26,12 @@ jQuery(function() {
 
 
 jQuery(function() {
+  $('div#edit-item').live('pagebeforehide', function(event, ui) {
+    tofu.items[tofu.item] = $('#edit-item-text').val();
+  });
   $('div#edit-item').live('pagebeforeshow', function(event, ui) {
     $('#edit-item-text').val(tofu.items[tofu.item]);
   });
-
   tofu.updateList();
 });
 
