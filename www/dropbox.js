@@ -29,8 +29,7 @@ var dropbox = {};
 dropbox.consumerKey = "";
 dropbox.consumerSecret = "";
 
-//Prefix for data storate - MUST be unique
-dropbox.prefix = "app_";
+dropbox.prefix = "tofu_mobile_";
 
 //Set to "dropbox" if your application has been given full Dropbox folder access
 dropbox.accessType = "sandbox";
