@@ -13,7 +13,7 @@
     <div data-role="header">
       <h1>Tofu</h1>
       <a href="#setup" data-icon="gear" class="ui-btn-left">Setup</a>
-      <a href="#add-item" data-icon="plus" class="ui-btn-right">Add</a>
+      <a href="#new-item" data-icon="plus" class="ui-btn-right">Add</a>
     </div>
     <div data-role="content" class="content">
     </div>
@@ -44,13 +44,13 @@
   </div>
 
   <!-- New item -->
-  <div data-role="page" id="add-item">
+  <div data-role="page" id="new-item">
       <div data-role="header">
           <h1>New item</h1>
       </div>
       <div data-role="content">
           <form>
-              <input type="text" name="text" />
+              <input type="text" name="text" id="new-item-text" />
               <input type="submit" value="Append" />
           </form>
       </div>

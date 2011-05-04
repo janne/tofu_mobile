@@ -32,6 +32,15 @@ jQuery(function() {
   $('div#edit-item').live('pagebeforeshow', function(event, ui) {
     $('#edit-item-text').val(tofu.items[tofu.item]);
   });
+  
+  // New item
+  $('div#new-item form').submit(function() {
+    tofu.items.push($('#new-item-text').val());
+    history.back();
+    return false;
+  });
+  
+  // Create initial list
   tofu.updateList();
 });
 
