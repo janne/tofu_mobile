@@ -49,13 +49,6 @@ dropbox.fileLimit = 10000;
 //Cookie expire time (in days). Default 10 years
 dropbox.cookieTime = 3650;
 
-/*-------------------No editing required beneath this line-------------------*/
-
-//Incude required JS libraries
-document.write("<script type='text/javascript' src='oauth.js'></script>");
-document.write("<script type='text/javascript' src='sha1.js'></script>");
-document.write("<script type='text/javascript' src='jquery.js'></script>");
-
 //If using HTML5 local storage
 if (dropbox.authHTML5 == true) {
 	//Get tokens (only declares variables if the token exists)
